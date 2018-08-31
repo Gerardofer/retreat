@@ -1,12 +1,12 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
-const keys = require("./config/keys");
+// const keys = require("./config/keys");
 
-mongoose.connect(
-  keys.mongoURI,
-  { useNewUrlParser: true }
-);
+// mongoose.connect(
+//   keys.mongoURI,
+//   { useNewUrlParser: true }
+// );
 
 const PORT = process.env.PORT || 5000;
 
