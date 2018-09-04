@@ -7,4 +7,6 @@ const userSchema = new Schema({
   food: String
 });
 
-mongoose.model("users", userSchema);
+let Users = mongoose.model("Users", userSchema);
+
+module.exports = Users;
