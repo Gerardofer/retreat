@@ -4,8 +4,6 @@ const mongoose = require("mongoose");
 const keys = require("./config/keys");
 const Users = require("./models/users");
 
-// console.log(Users);
-
 mongoose.connect(
   keys.mongoURI,
   { useNewUrlParser: true }
@@ -34,7 +32,13 @@ app.get("/", (req, res) => {
 });
 
 app.get("/subscribed", (req, res) => {
-  res.send("<h1>This is the People attending</h1>");
+  Users.find({}, (err, user) => {
+    if (err) {
+      console.log(err);
+    } else {
+      res.send(user);
+    }
+  });
 });
 
 app.listen(PORT, () => {
