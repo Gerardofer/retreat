@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./Form.css";
 
 class Form extends Component {
   render() {
@@ -31,7 +32,7 @@ class Form extends Component {
               <option>Chicken Salad</option>
             </select>
           </div>
-          <button type="submit" className="btn btn-primary mb-2">
+          <button type="submit" className="btn mb-2">
             Submit
           </button>
         </form>
