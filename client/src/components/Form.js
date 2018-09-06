@@ -1,10 +1,12 @@
 import React, { Component } from "react";
+import Header from "./Header";
 import "./Form.css";
 
 class Form extends Component {
   render() {
     return (
       <div className="container">
+        <Header />
         <form action="/" method="POST">
           <div className="form-group">
             <label htmlFor="name">Name</label>

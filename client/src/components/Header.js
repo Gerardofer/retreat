@@ -12,6 +12,9 @@ const Header = () => {
       <p>
         Please let us know below if you will be attending this year's retreat
       </p>
+      <a href="/all">
+        <button className="btn mb-2">See People Attending</button>
+      </a>
       <hr />
     </div>
   );
